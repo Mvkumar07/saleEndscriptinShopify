@@ -1,0 +1,42 @@
+  #discount_countdown { text-align: center; }
+.progress-bar-fill { background-color: #cccccc; }
+ #discount_countdown {
+	width: 100%;
+	max-width: 400px
+}
+
+.theme-watch {
+	color: #de4848;
+	font: 300 35px 'Lato';
+	z-index: 3;
+	background: transparent;
+	border-radius: 10%;
+	margin: 0.3% 5px 0.3% 0.3%;
+	padding: 0 5px 0 5px;
+	font-size: 20px;
+	width: auto !important;
+	position: relative;
+	display: inline-block
+}
+
+.theme-watch:not(:last-child)::after {
+	content: ':';
+	position: absolute;
+	top: -2px;
+	left: 100%;
+	color: #555
+}
+
+.progress-bar {
+	width: 100%;
+	border-radius: 10px;
+	margin: 10px 0;
+	background-color: #efefef
+}
+
+.progress-bar-fill {
+	display: block;
+	height: 10px;
+	border-radius: 10px;
+	transition: width 500ms ease-in-out
+}
